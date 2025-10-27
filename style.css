@@ -1,0 +1,175 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 44px 0 144px 76px;
+}
+
+/* Coloquei para não rolar a tela, pois ficava espaço em branco sobrando. */
+body{
+    overflow: hidden;
+}
+
+.link-header {
+    color: #989D9C;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 23px;
+    text-decoration: none;
+}
+
+.link-header:hover {
+    color: #665AE1;
+}
+
+.imagem {
+    width: 568px;
+    height: 500px;
+    margin-left: 125px;
+    display: inline-block;
+}
+
+section {
+    display: inline-block;
+    margin-left: 86px;
+}
+
+h1 {
+    font-size: 100px;
+    color: #515151;
+    line-height: 122px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 58px;
+    font-weight: 500;
+    line-height: 71px;
+    color: #515151;
+    text-transform: capitalize;
+}
+
+p {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 400;
+    color: #848484;
+    text-align: justify;
+    width: 515px;
+    margin-top: 32px;
+    margin-bottom: 65px;
+}
+
+.botao {
+    width: 130px;
+    height: 41px;
+    border-radius: 30px;
+    border: none;
+    background: #665AE1;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background: #5748C8;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.botao:active {
+    opacity: 0.5;
+}
+
+.botao2 {
+    width: 239px;
+    height: 64px;
+    border-radius: 30px;
+    border: none;
+    background: #ADFF00;
+    font-size: 28px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.botao2:hover {
+    background: #91CC00;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.botao2:active {
+    opacity: 0.5;
+}
+
+
+/* --------- MOBILE VERSION -----------*/
+
+@media only screen and (max-width: 900px) {
+
+    /* Conferido está correto. */
+    header {
+        display: none;
+        /* Oculta o cabeçalho */
+    }
+
+    /* Conferido está correto. */
+    main {
+        width: 100vw;
+        height: 100vh;
+        margin: auto 0;
+    }
+
+    /* Conferido está correto. */
+    .imagem {
+        width: 90%;
+        height: auto;
+        margin: 130px auto 0;
+        display: block;
+    }
+
+    section {
+        margin: auto;
+        text-align: center;
+        display: block;
+    }
+
+    /* Conferido está correto. */
+    h1 {
+        font-size: 50px;
+        line-height: normal;
+        margin-top: 24px;
+    }
+
+    /* Conferido está correto. */
+    h2 {
+        font-size: 30px;
+        margin: 7px auto 17px;
+        line-height: normal;
+        text-align: center;
+    }
+
+    /* Conferido está correto. */
+    p {
+        display: none;
+    }
+
+    /* Conferido está correto. */
+    .botao2:active {
+        background: #91CC00;
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
+}
